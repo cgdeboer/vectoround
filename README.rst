@@ -17,7 +17,7 @@ Example Code:
 .. code-block:: clojure
 
   (ns sample.core
-    (:require [vectoround.core :refer [saferound round]])
+    (:require [vectoround.core :refer [saferound]])
 
   (def pre-rounded-vectormap
     [{:name "foo" :value 60.19012964572332}
@@ -36,14 +36,18 @@ Example Code:
 How It Works
 ---------------
 Vectoround provides a function called :code:`saferound` that takes the
-following ordered inputs:
+following 3 ordered inputs:
 
-a collection: map, vector, list or set.
+a collection (map, vector, list or set): a data structure.
+    A structure that contains floats to be rounded. e.g a vector of floats,
+    a map with float values, a vector of maps contains floats.
 
 places (int): Places for rounding.
     Number of places each item in the set should be rounded to.
 
-field: :code:`:keyword` if the collection is a list/vector of maps, else pass :code:`nil`
+field (keyword, or nil):
+    if the collection is a list/vector of maps, else pass :code:`nil`
+
 
     Vectoround uses the 'difference' strategy and seeks to minimize the
     sum of the array of the differences between the original value and the
