@@ -1,4 +1,4 @@
-(defproject cgdeboer/vectoround "1.0.0"
+(defproject vectoround "1.0.0"
   :description "Sum-safe Rounding for Collections"
   :url "http://github.com/cgdeboer/vectoround"
   :license {:name "Eclipse Public License"

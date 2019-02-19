@@ -31,7 +31,6 @@
     (into [] (map #(-> (:value %) (round places))
                   (sort-by #(:order %) (concat head tail))))))
 
-
 (defn round-maps [entities places field]
   (let [new-values (round-vector (map field entities) places)]
     (into [] (map-indexed (fn [i x] (assoc x field (nth new-values i)))
