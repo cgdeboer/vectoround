@@ -6,8 +6,8 @@ Vectoround: Sum-safe Rounding for collections
 
 Leinengen coordinates:
 
-.. image:: http://clojars.org/cgdeboer/vectoround/latest-version.svg
-    :target: http://clojars.org/cgdeboer/vectoround ]
+.. image:: https://img.shields.io/clojars/v/vectoround.svg
+    :target: https://clojars.org/vectoround
 
 Vectoround is a sum-safe rounding library for
 collections (lists, vectors, sets, maps).
